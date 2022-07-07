@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.tmdbapp">
+
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+	<application
+			android:allowBackup="true"
+			android:icon="@mipmap/ic_launcher"
+			android:label="INFILM"
+			android:roundIcon="@mipmap/ic_launcher_round"
+			android:supportsRtl="true"
+			android:usesCleartextTraffic="true"
+		android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+		<activity android:name=".views.MainActivity">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN"/>
+
+				<category android:name="android.intent.category.LAUNCHER"/>
+			</intent-filter>
+		</activity>
+		<activity
+				android:parentActivityName=".views.MainActivity"
+				android:name=".views.MovieDetailsActivity"
+			    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar.Bridge"/>
+	</application>
+
+</manifest>

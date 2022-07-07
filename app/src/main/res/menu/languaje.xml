@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Languaje"
+        android:visible="true"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_languaje"
+        android:iconTint="@android:color/holo_blue_bright">
+
+        <menu>
+            <item android:title="English"
+                android:icon="@drawable/ic_languaje"
+                android:id="@+id/langEng">
+            </item>
+            <item android:title="Spanish"
+                android:icon="@drawable/ic_languaje"
+                android:id="@+id/langSpa">
+            </item>
+        </menu>
+    </item>
+</menu>
